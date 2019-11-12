@@ -1,0 +1,35 @@
+#+TITLE: ImbBench
+#+AUTHOR: Anderson Mattheus Maliszewski
+#+STARTUP: overview indent
+#+TAGS: noexport(n) deprecated(d)
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+SEQ_TODO: TODO(t!) STARTED(s!) WAITING(w!) | DONE(d!) CANCELLED(c!) DEFERRED(f!)
+
+*Imbalance Benchmark (ImbBench)* is a set of MPI-based applications that
+simulate several behaviors in terms of process loads. ImbBench was
+designed with the heterogeneity of the cloud in mind. Its goal is to
+help the user to choose the most suitable configuration to execute an
+applicationin the cloud. ImbBench distributes the load among all the
+available processes according to a preselected imbalance
+pattern. Below are listed a quick hands-on, composed by required
+dependencies and execution. Further information about the benchmark
+can be seen at the *Publication* session. 
+
+* Installation
+To execute this benchmark some packages need to be installed,
+which are:
+- openmpi-bin: Parallel code executor program (mpirun).
+- libopenmpi-dev: Necessary to develop parallel programs based on MPI
+  (mpicc command...)  
+
+The following quick command install the packages:
+
+#+begin_src shell :results output :exports both
+sudo apt install openmpi-bin libopenmpi-dev  
+#+end_src
+
+* Publications
+
+
+
