@@ -62,8 +62,7 @@ int cpu_rand_bench(int rank, int Pattern)
         case LINEAR:
         {
           int i = 0;
-                      320 000 000
-          int iTotal = 10 000 000 * (rank+1);
+          int iTotal = 10000000 * (rank+1);
     
           for(i=0;i<iTotal;i++)
           {
