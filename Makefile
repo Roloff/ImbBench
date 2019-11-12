@@ -1,3 +1,5 @@
+
+SFILE=src
 imb: main.o matrix.o matrix_benchs.o pingpong.o sort_benchs.o mergesort.o bst_benchs.o bst.o
 	mpicc main.c matrix.c matrix_benchs.c pingpong.c sort_benchs.c mergesort.c bst_benchs.c bst.c rand_benchs.c -O3 -o imb
 
