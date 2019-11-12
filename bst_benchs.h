@@ -1,1 +1,0 @@
-int mem_bst_bench(int MPI_Rank, int MPI_Size, int Pattern);
