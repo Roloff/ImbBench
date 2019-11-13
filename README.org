@@ -25,15 +25,38 @@ which are:
 - libopenmpi-dev: Necessary to develop parallel programs based on MPI
   (mpicc command...)  
 
-The following quick command install the packages:
-
+Install the packages:
 #+begin_src shell :results output :exports both
 sudo apt install openmpi-bin libopenmpi-dev  
 #+end_src
 
+Clone and compile it:
+#+begin_src shell :results output :exports both
+git clone --recursive https://github.com/Roloff/ImbBench.git
+cd ImbBench; mkdir bin; make
+#+end_src
+
 * Utilization
+To execute the benchmark it is necessary to select specific
+parameters, which are:
+
+- Test - The supported tests are *CPU* and  *Memory* or Help.
+- Patterns - *Balanced*, *Linear*, *Amdahl*, *2Level*, *4Level*, *8Level* or Help
+- Microbenchmark - *Rand*, *Sort* and *BST*
+
+The line command for execution will be like this:
+#+begin_src shell :results output :exports both
+mpirun -np $Processes bin/imb $Test $Pattern $Microbenchmark
+#+end_src
+
+Future updates of this benchmark are inteded to bring tests using I/O
+and Network.
 
 * Publications
+- Eduardo Roloff, Matthias Diener, Luciano P. Gaspary, Philippe
+  O. A. Navaux. *Exploiting Load Imbalance Patterns for Heterogeneous*
+  *Cloud Computing Platforms*. International Conference on Cloud
+  Computing and Services Science (CLOSER), 2018. [[https://doi.org/10.5220/0006807502480259][DOI]]
 
 
 
