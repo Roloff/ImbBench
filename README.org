@@ -40,7 +40,7 @@ cd ImbBench; mkdir bin; make
 To execute the benchmark it is necessary to select specific
 parameters, which are:
 
-- Test - The supported tests are *CPU* and  *Memory* or Help.
+- Test - *CPU* and  *Memory* or Help.
 - Patterns - *Balanced*, *Linear*, *Amdahl*, *2Level*, *4Level*, *8Level* or Help
 - Microbenchmark - *Rand*, *Sort* and *BST*
 
