@@ -1,7 +1,7 @@
-BENCHMARK=imb
-BINDIR	= bin
+BENCHMARK = imb
+BINDIR = bin
 SRCDIR = src
-CLINK	= mpicc
+CLINK = mpicc
 CLINKFLAGS = -O3
 
 
