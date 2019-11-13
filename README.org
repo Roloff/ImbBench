@@ -7,10 +7,10 @@
 #+SEQ_TODO: TODO(t!) STARTED(s!) WAITING(w!) | DONE(d!) CANCELLED(c!) DEFERRED(f!)
 
 *Imbalance Benchmark (ImbBench)* is a set of MPI-based applications,
-created by the PhD Student Eduardo Roloff, that simulate several
+created by the Ph.D. Student Eduardo Roloff, that simulate several
 behaviors in terms of process loads. ImbBench was designed with the
-heterogeneity of the cloud in mind and its goal is to help the user to
-choose the most suitable configuration to execute an application in
+heterogeneity of the cloud in mind, and its goal is to help the user to
+choose the most suitable configuration to execute an application in the
 cloud. ImbBench distributes the load among all the available processes
 according to a preselected imbalance pattern.
 
